@@ -13,7 +13,7 @@
   </description>
 
   <properties>
-    <jruby.version>1.5.1</jruby.version>
+    <jruby.version>1.6.8</jruby.version>
   </properties>
 
   <issueManagement>
@@ -67,7 +67,7 @@
       <layout>default</layout>
     </repository>
   </repositories>
-  
+
   <developers>
     <developer>
       <id>nicksieger</id>
@@ -152,7 +152,7 @@
             <phase>test</phase>
             <goals><goal>rake</goal></goals>
             <configuration>
-              <args>speconly SKIP_SPECS=${maven.test.skip}</args>
+              <args>speconly SKIP_SPECS=true</args>
             </configuration>
           </execution>
         </executions>
